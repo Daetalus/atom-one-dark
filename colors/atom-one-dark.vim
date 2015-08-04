@@ -15,12 +15,60 @@ let g:colors_name="atom-one-dark"
 " Set GUI and Terminal color values
 if has("gui_running")
     let s:white = "F8F8F2"
+    let s:black = "000000"
     let s:darkgrey = "202020"
-    let s:orchid = "C679DD"
+    let s:darkSlateGray = "8FBFDC"
+    let s:lightGoldenRod = "E5C17C"
+    let s:turquoise = "66D9EF"
+    let s:greypuple = "59626F"
+    let s:cadetBlue = "61AEAF"
+    let s:darkOliveGreen = "79B950"
+    let s:lightSalmon = "DAA74F"
+    let s:darkgreen = "90C378"
+    let s:sandybrown = "FD971F"
+    let s:holydew = "D2EBBE"
+    let s:grey3 = "080808"
+    let s:indianRed = "DF6F73"
+    let s:darkGoldenRod = "AF8700"
+    let s:grey19 = "293739"
+    let s:grey30 = "465457"
+    let s:grey15 = "232526"
+    let s:grey27 = "444444"
+    let s:grey50 = "808080"
+    let s:grey54 = "7E8E91"
+    let s:grey82 = "D0D0D0"
+    let s:grey70 = "A6B2C0"
+    let s:grey85 = "CDD3DE"
+    let s:grey46 = "777777"
+    let s:orchid = "B27ECD"
 else
     let s:white = "White"
+    let s:black = "16"
     let s:darkgrey = "234"
-    let s:orchid = "134"
+    let s:darkSlateGray = "116"
+    let s:greypuple = "60"
+    let s:lightGoldenRod = "179"
+    let s:darkGoldenRod = "136"
+    let s:turquoise = "80"
+    let s:cadetBlue = "75"
+    let s:darkgreen = "150"
+    let s:darkOliveGreen = "107"
+    let s:holydew = "194"
+    let s:lightSalmon = "173"
+    let s:sandybrown = "215"
+    let s:indianRed = "167"
+    let s:grey3 = "232"
+    let s:grey15 = "235"
+    let s:grey19 = "236"
+    let s:grey27 = "238"
+    let s:grey30 = "239"
+    let s:grey46 = "243"
+    let s:grey50 = "244"
+    let s:grey54 = "245"
+    let s:grey70 = "249"
+    let s:grey82 = "252"
+    let s:grey85 = "253"
+    let s:orchid = "140"
 endif
 
 " Highlighting function
@@ -46,107 +94,161 @@ fun <sid>hi(group, fg, bg, format)
     endif
 endfun
 
+call <sid>hi("Boolean", s:lightSalmon, "", "none")
 " hi Boolean         guifg=#D2945D
+call <sid>hi("Character", s:darkgreen, "", "none")
 " hi Character       guifg=#90C378
+call <sid>hi("Number", s:lightSalmon, "", "none")
 " hi Number          guifg=#D2945D
+call <sid>hi("String", s:darkgreen, "", "none")
 " hi String          guifg=#90C378
 " " hi Conditional     guifg=#F92672               gui=bold
+call <sid>hi("Constant", s:lightSalmon, "", "bold")
 " hi Constant        guifg=#D2945D               gui=bold
 "
+call <sid>hi("Cursor", s:black, s:white, "none")
 " hi Cursor          guifg=#000000 guibg=#F8F8F0
+call <sid>hi("iCursor", s:black, s:white, "none")
 " hi iCursor         guifg=#000000 guibg=#F8F8F0
 " " hi Debug           guifg=#BCA3A3               gui=bold
+call <sid>hi("Define", s:orchid, "", "none")
 " hi Define          guifg=#B27ECD
 "
+call <sid>hi("Delimiter", s:grey70, "", "none")
 " hi Delimiter       guifg=#A6B2C0
+call <sid>hi("DiffAdd", s:holydew, s:darkOliveGreen, "none")
 " hi DiffAdd         guifg=#D2EBBE guibg=#437019
 " hi DiffChange      guifg=#2B5B77 guibg=#2B5B77
 " hi DiffDelete      guifg=#40000A guibg=#700009
 " hi DiffText        guifg=#8FBFBC guibg=#000000 gui=italic,bold
+call <sid>hi("Directory", s:darkSlateGray, "", "bold")
 " hi Directory       guifg=#DAD085               gui=bold
+call <sid>hi("Error", s:lightGoldenRod, s:grey30, "none")
 " hi Error           guifg=#8BD649 guibg=#1E0010
 " hi ErrorMsg        guifg=#F92672 guibg=bg      gui=bold
+call <sid>hi("ErrorMsg", "", s:grey15, "bold")
 " " hi ErrorMsg        guifg=#902020 guibg=#232526 gui=bold
+call <sid>hi("Exception", s:indianRed, "", "bold")
 " hi Exception       guifg=#F77669               gui=bold
-"
+call <sid>hi("Float", s:lightSalmon, "", "none")"
 " hi Float           guifg=#D2945D
+call <sid>hi("FoldColumn", s:grey30, s:black, "none")
 " hi FoldColumn      guifg=#535D66 guibg=#000000
+call <sid>hi("Folded", s:grey70, s:black, "none")
 " hi Folded          guifg=#A0A8B0 guibg=#000000
+call <sid>hi("Function", s:cadetBlue, "", "none")
 " hi Function        guifg=#61AEEF
+call <sid>hi("Indentifier", s:sandybrown, "", "none")
 " hi Identifier      guifg=#FD971F
+call <sid>hi("Ignore", s:grey50, s:darkgrey, "none")
 " hi Ignore          guifg=#808080 guibg=bg
+call <sid>hi("IncSearch", s:grey30, s:darkOliveGreen, "none")
 " hi IncSearch       guifg=#37474F guibg=#000000
-call <sid>hi("Keyword", s:orchid, "", "none")
+call <sid>hi("Keyword", s:orchid, "", "bold")
 " " hi Keyword         guifg=#C679DD               gui=bold
-" hi Variable        guifg=#DF6A73
+call <sid>hi("Label", s:darkgreen, "", "none")
 " hi Label           guifg=#90C378               gui=none
 " " hi Macro           guifg=#C4BE89               gui=italic
+call <sid>hi("SpecialKey", s:grey27, "", "italic")
 " hi SpecialKey      guifg=#444444               gui=italic
+call <sid>hi("MatchParen", s:white, s:grey30, "underline")
 " hi MatchParen      guifg=#FFFFFF guibg=#556779 gui=bold
+call <sid>hi("ModeMsg", s:darkgreen, "", "none")
 " hi ModeMsg         guifg=#90C378
+call <sid>hi("MoreMsg", s:darkOliveGreen, "", "none")
 " hi MoreMsg         guifg=#799D6A
+call <sid>hi("Operator", s:darkSlateGray, "", "none")
 " hi Operator        guifg=#8FBFDC
 "
 " " complete menu
+call <sid>hi("Pmenu", s:turquoise, s:black , "none")
 " hi Pmenu           guifg=#66D9EF guibg=#000000
+call <sid>hi("PmenuSel", "", s:grey50, "")
 " hi PmenuSel                      guibg=#808080
+call <sid>hi("PmenuSbar", "", s:grey3, "")
 " hi PmenuSbar                     guibg=#080808
+call <sid>hi("PmenuThumb", s:turquoise, "", "")
 " hi PmenuThumb      guifg=#66D9EF
-" "
-" " hi PreCondit       guifg=#A6E22E               gui=bold
+
+" hi PreCondit       guifg=#A6E22E               gui=bold
+call <sid>hi("PreProc", s:darkSlateGray, "", "none")
 " hi PreProc         guifg=#8FBFDC
 " hi Question        guifg=#65C254
 " " hi Repeat          guifg=#F92672               gui=bold
+call <sid>hi("Search", s:grey19, s:grey85, "underline")
 " hi Search          guifg=#263238 guibg=#CDD3DE   gui=underline
-" " marks
+" marks
+call <sid>hi("SignColumn", s:grey46, s:grey19, "none")
 " hi SignColumn      guifg=#777777 guibg=#333333
-" " hi SpecialChar     guifg=#F92672               gui=bold
-" " hi SpecialComment  guifg=#7E8E91               gui=bold
+call <sid>hi("SpecialChar", s:indianRed, "", "bold")
+" hi SpecialChar     guifg=#F92672               gui=bold
+call <sid>hi("SpecialComment", s:grey54, "", "bold")
+" hi SpecialComment  guifg=#7E8E91               gui=bold
+call <sid>hi("Special", s:darkOliveGreen, s:darkgrey, "italic")
 " hi Special         guifg=#799D6A guibg=bg      gui=italic
-" if has("spell")
-"     hi SpellBad    guisp=#902020 gui=undercurl
-"     hi SpellCap    guisp=#0000DF gui=undercurl
-"     hi SpellLocal  guisp=#540063 gui=undercurl
-"     hi SpellRare   guisp=#2D7067 gui=undercurl
-" endif
+if has("spell")
+    hi SpellBad    guisp=#902020 gui=undercurl
+    hi SpellCap    guisp=#0000DF gui=undercurl
+    hi SpellLocal  guisp=#540063 gui=undercurl
+    hi SpellRare   guisp=#2D7067 gui=undercurl
+endif
 "
 call <sid>hi("Statement", s:orchid, "", "bold")
 " hi Statement       guifg=#B27ECD               gui=bold
 " hi StatusLine      guifg=#95A2BB guibg=#22252B gui=italic
-" " hi StatusLine      guifg=#95A2BB guibg=fg
+ " hi StatusLine      guifg=#95A2BB guibg=fg
+
+call <sid>hi("StatusLineNC", s:grey50, s:grey3, "none")
 " hi StatusLineNC    guifg=#808080 guibg=#080808
 " hi StorageClass    guifg=#C59F6F               gui=italic
+call <sid>hi("Structure", s:lightSalmon, "", "none")
 " hi Structure       guifg=#8FBFDC
+call <sid>hi("Tag", s:indianRed, "", "italic")
 " hi Tag             guifg=#DF6A73               gui=italic
+call <sid>hi("Title", s:darkOliveGreen, "", "none")
 " hi Title           guifg=#79B950
+call <sid>hi("Todo", s:white, s:darkgrey, "bold")
 " hi Todo            guifg=#FFFFFF guibg=bg      gui=bold
 "
 " " hi Typedef         guifg=#66D9EF
+call <sid>hi("Type", s:lightGoldenRod, "", "bold")
 " hi Type            guifg=#E5C17C               gui=bold
+call <sid>hi("Underlined", s:grey50, "", "underline")
 " " hi Underlined      guifg=#808080               gui=underline
 "
-" " unchanged
+" unchanged
+call <sid>hi("VertSplit", s:grey50, s:grey3, "none")
 " hi VertSplit       guifg=#808080 guibg=#080808 gui=bold
-" " hi VisualNOS                     guibg=#403D3D
+call <sid>hi("VisualNOS", "", s:grey30, "none")
+" hi VisualNOS                     guibg=#403D3D
+call <sid>hi("Visual", "", s:grey30, "none")
 " hi Visual                        guibg=#404040
-" " hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=bold
+" hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=bold
 " hi WildMenu        guifg=#F0A0C0 guibg=#302028
 "
 " hi TabLineFill     guifg=#9098A0
 " " unchanged
+
+call <sid>hi("TabLine", s:darkgrey, s:grey50, "none")
 " hi TabLine         guibg=#1B1D1E guifg=#808080 gui=none
 "
 call <sid>hi("Normal", s:white, s:darkgrey, "none")
 " hi Normal          guifg=#F8F8F2 guibg=#202020
+call <sid>hi("Comment", s:grey54, "", "none")
 " hi Comment         guifg=#59626F
-" " unchanged
+call <sid>hi("CursorLine", s:grey19, "", "none")
 " hi CursorLine                    guibg=#293739
+call <sid>hi("CursorLineNr", s:grey82, "", "none")
 " hi CursorLineNr    guifg=#CCC5C4               gui=none
-" " unchanged
+call <sid>hi("CursorColumn", s:grey19, "", "none")
 " hi CursorColumn                  guibg=#293739
+call <sid>hi("ColorColumn", "", s:greypuple, "")
 " hi ColorColumn                   guibg=#5F6B85
+call <sid>hi("LineNr", s:grey30, s:grey15, "none")
 " hi LineNr          guifg=#465457 guibg=#232526
+call <sid>hi("NonText", s:grey30, "", "")
 " hi NonText         guifg=#465457
+call <sid>hi("SpecialKey", s:grey30, "", "")
 " hi SpecialKey      guifg=#465457
 
 " Must be at the end, because of ctermbg=234 bug.
