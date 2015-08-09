@@ -208,10 +208,13 @@ call <sid>hi("SpecialComment", s:grey54, "", "bold")
 call <sid>hi("Special", s:darkOliveGreen, s:darkgrey, "italic")
 " hi Special         guifg=#799D6A guibg=bg      gui=italic
 if has("spell")
-    hi SpellBad    guisp=#A03939 gui=undercurl
-    hi SpellCap    guisp=#F391A9 gui=undercurl
-    hi SpellLocal  guisp=#540063 gui=undercurl
-    hi SpellRare   guisp=#2D7067 gui=undercurl
+    if has("guirunning")
+        hi SpellBad    guisp=#A03939 gui=undercurl
+        hi SpellCap    guisp=#F391A9 gui=undercurl
+        hi SpellLocal  guisp=#540063 gui=undercurl
+        hi SpellRare   guisp=#2D7067 gui=undercurl
+    else
+    endif
 endif
 "
 call <sid>hi("Statement", s:orchid, "", "bold")
