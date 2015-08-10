@@ -109,77 +109,41 @@ fun <sid>hi(group, fg, bg, format)
 endfun
 
 call <sid>hi("Boolean", s:lightSalmon, "", "none")
-" hi Boolean         guifg=#D2945D
 call <sid>hi("Character", s:darkgreen, "", "none")
-" hi Character       guifg=#90C378
 call <sid>hi("Number", s:lightSalmon, "", "none")
-" hi Number          guifg=#D2945D
 call <sid>hi("String", s:darkgreen, "", "none")
-" hi String          guifg=#90C378
 call <sid>hi("Conditional", s:indianRed, "", "bold")
-" " hi Conditional     guifg=#F92672               gui=bold
 call <sid>hi("Constant", s:lightSalmon, "", "bold")
-" hi Constant        guifg=#D2945D               gui=bold
-"
 call <sid>hi("Cursor", s:black, s:white, "none")
-" hi Cursor          guifg=#000000 guibg=#F8F8F0
 call <sid>hi("iCursor", s:black, s:white, "none")
-" hi iCursor         guifg=#000000 guibg=#F8F8F0
 call <sid>hi("Debug", s:grey66, "", "bold")
-" " hi Debug           guifg=#BCA3A3               gui=bold
 call <sid>hi("Define", s:orchid, "", "none")
-" hi Define          guifg=#B27ECD
-"
 call <sid>hi("Delimiter", s:grey70, "", "none")
-" hi Delimiter       guifg=#A6B2C0
 call <sid>hi("DiffAdd", s:holydew, s:darkOliveGreen, "none")
-" hi DiffAdd         guifg=#D2EBBE guibg=#437019
 call <sid>hi("DiffChange", s:mistyRose, s:grey30, "none")
-" hi DiffChange      guifg=#2B5B77 guibg=#2B5B77
 call <sid>hi("DiffDelete", s:deepPink, s:grey30, "none")
-" hi DiffDelete      guifg=#40000A guibg=#700009
 call <sid>hi("DiffText", "", s:grey30, "italic,bold")
-" hi DiffText        guifg=#8FBFBC guibg=#000000 gui=italic,bold
 call <sid>hi("Directory", s:darkSlateGray, "", "bold")
-" hi Directory       guifg=#DAD085               gui=bold
 call <sid>hi("Error", s:lightGoldenRod, s:grey30, "none")
-" hi Error           guifg=#8BD649 guibg=#1E0010
 call <sid>hi("ErrorMsg", "", s:grey15, "bold")
-" " hi ErrorMsg        guifg=#902020 guibg=#232526 gui=bold
 call <sid>hi("Exception", s:indianRed, "", "bold")
-" hi Exception       guifg=#F77669               gui=bold
 call <sid>hi("Float", s:lightSalmon, "", "none")"
-" hi Float           guifg=#D2945D
 call <sid>hi("FoldColumn", s:grey30, s:black, "none")
-" hi FoldColumn      guifg=#535D66 guibg=#000000
 call <sid>hi("Folded", s:grey70, s:black, "none")
-" hi Folded          guifg=#A0A8B0 guibg=#000000
 call <sid>hi("Function", s:cadetBlue, "", "none")
-" hi Function        guifg=#61AEEF
 call <sid>hi("Indentifier", s:sandybrown, "", "none")
-" hi Identifier      guifg=#FD971F
 call <sid>hi("Ignore", s:grey50, s:darkgrey, "none")
-" hi Ignore          guifg=#808080 guibg=bg
 call <sid>hi("IncSearch", s:grey30, s:darkOliveGreen, "none")
-" hi IncSearch       guifg=#37474F guibg=#000000
 call <sid>hi("Keyword", s:orchid, "", "bold")
-" " hi Keyword         guifg=#C679DD               gui=bold
 call <sid>hi("Label", s:darkgreen, "", "none")
-" hi Label           guifg=#90C378               gui=none
 call <sid>hi("Macro", s:najaroWhite, "", "italic")
-" " hi Macro           guifg=#C4BE89               gui=italic
 call <sid>hi("SpecialKey", s:grey27, "", "italic")
-" hi SpecialKey      guifg=#444444               gui=italic
 call <sid>hi("MatchParen", s:white, s:grey30, "underline")
-" hi MatchParen      guifg=#FFFFFF guibg=#556779 gui=bold
 call <sid>hi("ModeMsg", s:darkgreen, "", "none")
-" hi ModeMsg         guifg=#90C378
 call <sid>hi("MoreMsg", s:darkOliveGreen, "", "none")
-" hi MoreMsg         guifg=#799D6A
 call <sid>hi("Operator", s:darkSlateGray, "", "none")
-" hi Operator        guifg=#8FBFDC
 "
-" " complete menu
+" complete menu
 call <sid>hi("Pmenu", s:turquoise, s:grey15 , "none")
 " hi Pmenu           guifg=#66D9EF guibg=#000000
 call <sid>hi("PmenuSel", "", s:grey50, "")
