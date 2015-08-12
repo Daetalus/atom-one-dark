@@ -142,35 +142,21 @@ call <sid>hi("MatchParen", s:white, s:grey30, "underline")
 call <sid>hi("ModeMsg", s:darkgreen, "", "none")
 call <sid>hi("MoreMsg", s:darkOliveGreen, "", "none")
 call <sid>hi("Operator", s:darkSlateGray, "", "none")
-"
+
 " complete menu
 call <sid>hi("Pmenu", s:turquoise, s:grey15 , "none")
-" hi Pmenu           guifg=#66D9EF guibg=#000000
 call <sid>hi("PmenuSel", "", s:grey50, "")
-" hi PmenuSel                      guibg=#808080
 call <sid>hi("PmenuSbar", "", s:grey3, "")
-" hi PmenuSbar                     guibg=#080808
 call <sid>hi("PmenuThumb", s:turquoise, "", "")
-" hi PmenuThumb      guifg=#66D9EF
 call <sid>hi("PreCondit", s:darkOliveGreen, "", "bold")
-" hi PreCondit       guifg=#A6E22E               gui=bold
 call <sid>hi("PreProc", s:darkSlateGray, "", "none")
-" hi PreProc         guifg=#8FBFDC
 call <sid>hi("Question", s:paleGreen, "", "none")
-" hi Question        guifg=#65C254
 call <sid>hi("Repeat", s:indianRed, "", "bold")
-" " hi Repeat          guifg=#F92672               gui=bold
 call <sid>hi("Search", s:grey19, s:grey85, "underline")
-" hi Search          guifg=#263238 guibg=#CDD3DE   gui=underline
-" marks
 call <sid>hi("SignColumn", s:grey46, s:grey19, "none")
-" hi SignColumn      guifg=#777777 guibg=#333333
 call <sid>hi("SpecialChar", s:indianRed, "", "bold")
-" hi SpecialChar     guifg=#F92672               gui=bold
 call <sid>hi("SpecialComment", s:grey54, "", "bold")
-" hi SpecialComment  guifg=#7E8E91               gui=bold
 call <sid>hi("Special", s:darkOliveGreen, s:darkgrey, "italic")
-" hi Special         guifg=#799D6A guibg=bg      gui=italic
 if has("spell")
     if has("guirunning")
         hi SpellBad    guisp=#A03939 gui=undercurl
@@ -180,12 +166,9 @@ if has("spell")
     else
     endif
 endif
-"
-call <sid>hi("Statement", s:orchid, "", "bold")
-" hi Statement       guifg=#B27ECD               gui=bold
-call <sid>hi("StatusLine", s:grey53, "", "italic")
-" hi StatusLine      guifg=#95A2BB guibg=#22252B gui=italic
 
+call <sid>hi("Statement", s:orchid, "", "bold")
+call <sid>hi("StatusLine", s:grey53, "", "italic")
 call <sid>hi("StatusLineNC", s:grey50, s:grey3, "none")
 " hi StatusLineNC    guifg=#808080 guibg=#080808
 call <sid>hi("StorageClass", s:orchid, "", "italic")
