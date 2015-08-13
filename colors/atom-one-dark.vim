@@ -170,39 +170,20 @@ endif
 call <sid>hi("Statement", s:orchid, "", "bold")
 call <sid>hi("StatusLine", s:grey53, "", "italic")
 call <sid>hi("StatusLineNC", s:grey50, s:grey3, "none")
-" hi StatusLineNC    guifg=#808080 guibg=#080808
 call <sid>hi("StorageClass", s:orchid, "", "italic")
-" hi StorageClass    guifg=#C59F6F               gui=italic
 call <sid>hi("Structure", s:lightSalmon, "", "none")
-" hi Structure       guifg=#8FBFDC
 call <sid>hi("Tag", s:indianRed, "", "italic")
-" hi Tag             guifg=#DF6A73               gui=italic
 call <sid>hi("Title", s:darkOliveGreen, "", "none")
-" hi Title           guifg=#79B950
 call <sid>hi("Todo", s:white, s:darkgrey, "bold")
-" hi Todo            guifg=#FFFFFF guibg=bg      gui=bold
-"
-" " hi Typedef         guifg=#66D9EF
 call <sid>hi("Type", s:lightGoldenRod, "", "bold")
-" hi Type            guifg=#E5C17C               gui=bold
 call <sid>hi("Underlined", s:grey50, "", "underline")
-" " hi Underlined      guifg=#808080               gui=underline
-"
-" unchanged
 call <sid>hi("VertSplit", s:grey50, s:grey3, "none")
-" hi VertSplit       guifg=#808080 guibg=#080808 gui=bold
 call <sid>hi("VisualNOS", "", s:grey30, "none")
-" hi VisualNOS                     guibg=#403D3D
 call <sid>hi("Visual", "", s:grey30, "none")
-" hi Visual                        guibg=#404040
 call <sid>hi("WarningMsg", s:white, s:grey27, "bold")
-" hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=bold
 call <sid>hi("WildMenu", "", s:grey19, "underline")
-" hi WildMenu        guifg=#F0A0C0 guibg=#302028
-"
+
 call <sid>hi("TabLineFill", s:grey62, "", "")
-" hi TabLineFill     guifg=#9098A0
-" " unchanged
 
 call <sid>hi("TabLine", s:darkgrey, s:grey50, "none")
 " hi TabLine         guibg=#1B1D1E guifg=#808080 gui=none
