@@ -184,28 +184,16 @@ call <sid>hi("WarningMsg", s:white, s:grey27, "bold")
 call <sid>hi("WildMenu", "", s:grey19, "underline")
 
 call <sid>hi("TabLineFill", s:grey62, "", "")
-
 call <sid>hi("TabLine", s:darkgrey, s:grey50, "none")
-" hi TabLine         guibg=#1B1D1E guifg=#808080 gui=none
-"
 call <sid>hi("Normal", s:white, s:darkgrey, "none")
-" hi Normal          guifg=#F8F8F2 guibg=#202020
 call <sid>hi("Comment", s:grey54, "", "none")
-" hi Comment         guifg=#59626F
 call <sid>hi("CursorLine", "", s:grey19, "underline")
-" hi CursorLine                    guibg=#293739
 call <sid>hi("CursorLineNr", s:grey82, "", "none")
-" hi CursorLineNr    guifg=#CCC5C4               gui=none
 call <sid>hi("CursorColumn", s:grey19, "", "none")
-" hi CursorColumn                  guibg=#293739
 call <sid>hi("ColorColumn", "", s:greypuple, "")
-" hi ColorColumn                   guibg=#5F6B85
 call <sid>hi("LineNr", s:grey30, s:grey15, "none")
-" hi LineNr          guifg=#465457 guibg=#232526
 call <sid>hi("NonText", s:grey30, "", "")
-" hi NonText         guifg=#465457
 call <sid>hi("SpecialKey", s:grey30, "", "")
-" hi SpecialKey      guifg=#465457
 
 " Must be at the end, because of ctermbg=234 bug.
 " https://groups.google.com/forum/#!msg/vim_dev/afPqwAFNdrU/nqh6tOM87QUJ
