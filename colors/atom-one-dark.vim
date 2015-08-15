@@ -170,61 +170,30 @@ endif
 call <sid>hi("Statement", s:orchid, "", "bold")
 call <sid>hi("StatusLine", s:grey53, "", "italic")
 call <sid>hi("StatusLineNC", s:grey50, s:grey3, "none")
-" hi StatusLineNC    guifg=#808080 guibg=#080808
 call <sid>hi("StorageClass", s:orchid, "", "italic")
-" hi StorageClass    guifg=#C59F6F               gui=italic
 call <sid>hi("Structure", s:lightSalmon, "", "none")
-" hi Structure       guifg=#8FBFDC
 call <sid>hi("Tag", s:indianRed, "", "italic")
-" hi Tag             guifg=#DF6A73               gui=italic
 call <sid>hi("Title", s:darkOliveGreen, "", "none")
-" hi Title           guifg=#79B950
 call <sid>hi("Todo", s:white, s:darkgrey, "bold")
-" hi Todo            guifg=#FFFFFF guibg=bg      gui=bold
-"
-" " hi Typedef         guifg=#66D9EF
 call <sid>hi("Type", s:lightGoldenRod, "", "bold")
-" hi Type            guifg=#E5C17C               gui=bold
 call <sid>hi("Underlined", s:grey50, "", "underline")
-" " hi Underlined      guifg=#808080               gui=underline
-"
-" unchanged
 call <sid>hi("VertSplit", s:grey50, s:grey3, "none")
-" hi VertSplit       guifg=#808080 guibg=#080808 gui=bold
 call <sid>hi("VisualNOS", "", s:grey30, "none")
-" hi VisualNOS                     guibg=#403D3D
 call <sid>hi("Visual", "", s:grey30, "none")
-" hi Visual                        guibg=#404040
 call <sid>hi("WarningMsg", s:white, s:grey27, "bold")
-" hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=bold
 call <sid>hi("WildMenu", "", s:grey19, "underline")
-" hi WildMenu        guifg=#F0A0C0 guibg=#302028
-"
-call <sid>hi("TabLineFill", s:grey62, "", "")
-" hi TabLineFill     guifg=#9098A0
-" " unchanged
 
+call <sid>hi("TabLineFill", s:grey62, "", "")
 call <sid>hi("TabLine", s:darkgrey, s:grey50, "none")
-" hi TabLine         guibg=#1B1D1E guifg=#808080 gui=none
-"
 call <sid>hi("Normal", s:white, s:darkgrey, "none")
-" hi Normal          guifg=#F8F8F2 guibg=#202020
 call <sid>hi("Comment", s:grey54, "", "none")
-" hi Comment         guifg=#59626F
 call <sid>hi("CursorLine", "", s:grey19, "underline")
-" hi CursorLine                    guibg=#293739
 call <sid>hi("CursorLineNr", s:grey82, "", "none")
-" hi CursorLineNr    guifg=#CCC5C4               gui=none
 call <sid>hi("CursorColumn", s:grey19, "", "none")
-" hi CursorColumn                  guibg=#293739
 call <sid>hi("ColorColumn", "", s:greypuple, "")
-" hi ColorColumn                   guibg=#5F6B85
 call <sid>hi("LineNr", s:grey30, s:grey15, "none")
-" hi LineNr          guifg=#465457 guibg=#232526
 call <sid>hi("NonText", s:grey30, "", "")
-" hi NonText         guifg=#465457
 call <sid>hi("SpecialKey", s:grey30, "", "")
-" hi SpecialKey      guifg=#465457
 
 " Must be at the end, because of ctermbg=234 bug.
 " https://groups.google.com/forum/#!msg/vim_dev/afPqwAFNdrU/nqh6tOM87QUJ
