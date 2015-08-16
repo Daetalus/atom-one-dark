@@ -6,3 +6,7 @@ This is mimix Atom default one dark theme for Vim.  [One dark theme](https://ato
 ~~The color theme now in **Alpha** stage.~~
 
 The color theme is ready to use now. **Feel FREE to report issue**. I will **continue** to improve it!
+
+## License
+
+The code is release under MIT license.
