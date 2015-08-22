@@ -164,6 +164,10 @@ if has("spell")
         hi SpellLocal  guisp=#540063 gui=undercurl
         hi SpellRare   guisp=#2D7067 gui=undercurl
     else
+        hi SpellBad    gui=undercurl
+        hi SpellCap    gui=undercurl
+        hi SpellLocal  gui=undercurl
+        hi SpellRare   gui=undercurl
     endif
 endif
 
